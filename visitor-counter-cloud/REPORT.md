@@ -22,17 +22,22 @@ Build a small web application that counts visits while demonstrating containeriz
 - Measure at least three optimization techniques.
 
 ### Architecture
-Insert the architecture diagram from `architecture.mmd` (render it using Mermaid-compatible Markdown preview or mermaid.live and save as PNG).
+Insert the architecture diagram from `architecture.mmd` (render it using Mermaid-compatible Markdown preview or mermaid.live and save as PNG)
 
 ### Implementation
 Describe `app.py`, Redis key `visitor_count`, Docker image, Compose configuration, Kubernetes Deployment/Services, probes, resource limits and HPA settings.
 
 ### Task-wise Demonstration
-**Task 1 — Containerization:** Add Docker build/run screenshots and browser result.  
-**Task 2 — Kubernetes:** Add deployment, pod, service and self-healing screenshots.  
-**Task 3 — HPA:** Add HPA configuration and load-test/scale screenshots.  
-**Task 4 — Hybrid cloud:** State that two Minikube clusters were simulated locally on one laptop. Explain manual failover and add primary-down/secondary-up evidence.  
-**Task 5 — Cost optimization:** Add the completed `cost-analysis.csv` table and explain measurement conditions.
+**Task 1 — Containerization:<img width="1510" height="437" alt="docker-compose" src="https://github.com/user-attachments/assets/742cf966-1df7-480d-acef-522132655224" />
+ 
+**Task 2 — Kubernetes:**   <img width="1421" height="327" alt="kubernetes-pods" src="https://github.com/user-attachments/assets/a9a8e4e3-3855-4c90-b9f8-bb1bfd334050" />
+
+**Task 3 — HPA:**   <img width="1916" height="1097" alt="hpa-scaling" src="https://github.com/user-attachments/assets/9a4720be-53db-4095-a581-9e7e483185f1" />
+
+**Task 4 — Hybrid cloud:**   <img width="1162" height="175" alt="hybrid-clusters-nodes-ready" src="https://github.com/user-attachments/assets/652dddba-8f6f-4a8e-8245-cbf080422d9a" /><img width="1415" height="596" alt="hybrid-both-clusters" src="https://github.com/user-attachments/assets/68e84698-5ec3-4dea-95f3-b4b735fe6ca7" />
+
+
+**Task 5 — Cost optimization:** 
 
 ### Cost Optimization Results
 | Technique | Before | After | Unit | Measurement |
