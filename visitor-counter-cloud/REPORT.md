@@ -7,7 +7,8 @@
 **Course:** Cloud Computing 
 
 **Faculty:** Rohit Kumar
-**GitHub Repository (Public):**https://github.com/Prince97983/Cloud_Computing/tree/main/visitor-counter-cloud
+
+**GitHub Repository (Public):** https://github.com/Prince97983/Cloud_Computing/tree/main/visitor-counter-cloud
 
 ### Abstract
 This project implements a web-based visitor counter using Flask and Redis. Docker packages the application, Docker Compose supports local multi-container execution, and Kubernetes deploys and manages the services. HPA demonstrates horizontal scaling. A two-Minikube-cluster setup simulates hybrid-cloud failover locally. Resource and image optimization techniques are evaluated using measurements collected during execution.
