@@ -1,0 +1,10 @@
+flowchart LR
+  U[User / Browser] --> S[NodePort or port-forward]
+  S --> W[Flask Web Deployment]
+  W --> R[Redis Service]
+  R --> D[(Redis data)]
+  W -. CPU metrics .-> H[HPA]
+  H --> W
+  W --> C1[Minikube Cluster A\nPrivate-cloud simulation]
+  C1 -. Failure / manual switch .-> C2[Minikube Cluster B\nPublic-cloud simulation]
+  C2 --> W2[Flask + Redis replica deployment]

@@ -1,0 +1,4 @@
+Technique,Metric,Before,After,Unit,Measurement command/method,Notes
+Resource requests/limits,Pod CPU request,,,,kubectl get deployment visitor-web -n visitor-counter -o yaml,Record configured values
+Lightweight image,Image size,,,,docker images visitor-counter:1.0,Compare against your original image
+HPA,Web replicas under load,,,,kubectl get hpa,pods -n visitor-counter -w,Record baseline and peak
