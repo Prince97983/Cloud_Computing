@@ -43,10 +43,10 @@ Describe `app.py`, Redis key `visitor_count`, Docker image, Compose configuratio
 ### Cost Optimization Results
 | Technique | Before | After | Unit | Measurement |
 |---|---:|---:|---|---|
-| Resource requests/limits | Fill | Fill | CPU/Memory | kubectl output |
-| Slim image/no pip cache | Fill | Fill | MB | docker images |
-| HPA idle/load | Fill | Fill | replicas | kubectl get hpa |
-| Optional fourth technique | Fill | Fill | Fill | Fill |
+| Resource requests/limits |CPU: 500m, RAM: 512Mi  | CPU: 200m, RAM: 192Mi | CPU/Memory | kubectl get deployment -o yaml |
+| Slim image/no pip cache | Actual baseline image size | Actual optimized image size | MB | docker images |
+| HPA idle/load | 2 | Actual peak replicas (e.g. 4)| replicas | kubectl get hpa |
+| Optional fourth technique | Root user | User 10001	 | User | Dockerfile |
 
 **Note:** Populate values from your actual laptop execution. Do not claim real cloud billing savings from a local simulation.
 
